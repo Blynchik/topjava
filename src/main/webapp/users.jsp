@@ -25,7 +25,7 @@
         </tr>
         </thead>
         <c:forEach items="${requestScope.users}" var="user">
-            <jsp:useBean id="user" type="ru.javawebinar.topjava.model.UserTo"/>
+            <jsp:useBean id="user" type="ru.javawebinar.topjava.to.UserTo"/>
             <tr class="${user.name ? 'excess' : 'normal'}">
                 <td>
                         <%--${meal.dateTime.toLocalDate()} ${meal.dateTime.toLocalTime()}--%>

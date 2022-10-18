@@ -1,7 +1,7 @@
 package ru.javawebinar.topjava.util;
 
 import ru.javawebinar.topjava.model.User;
-import ru.javawebinar.topjava.model.UserTo;
+import ru.javawebinar.topjava.to.UserTo;
 
 import java.util.*;
 import java.util.stream.Collectors;
