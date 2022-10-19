@@ -31,7 +31,7 @@
                         <%--${meal.dateTime.toLocalDate()} ${meal.dateTime.toLocalTime()}--%>
                         <%--<%=TimeUtil.toString(meal.getDateTime())%>--%>
                         <%--${fn:replace(meal.dateTime, 'T', ' ')}--%>
-                        ${user.id}
+                        <a href="meals?action=show&id=${user.id}">${user.id}</a>
                 </td>
                 <td>${user.name}</td>
                 <td>${user.email}</td>

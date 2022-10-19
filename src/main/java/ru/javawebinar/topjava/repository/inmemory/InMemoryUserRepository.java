@@ -35,7 +35,6 @@ public class InMemoryUserRepository implements UserRepository {
     public User save(User user) {
         if (user.isNew()) {
             user.setId(counter.incrementAndGet());
-            System.out.println(user.getId()+" "+user.getName());
             repository.put(user.getId(), user);
             return user;
         }
@@ -60,4 +59,6 @@ public class InMemoryUserRepository implements UserRepository {
         log.info("getByEmail {}", email);
         return repository.get(email);
     }
+
+
 }
