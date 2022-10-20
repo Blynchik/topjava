@@ -5,15 +5,6 @@
 <%--<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>--%>
 <html>
 <head>
-    <title>Meal list</title>
-    <style>
-        .normal {
-            color: green;
-        }
-        .excess {
-            color: red;
-        }
-    </style>
 </head>
 <body>
 <section>
