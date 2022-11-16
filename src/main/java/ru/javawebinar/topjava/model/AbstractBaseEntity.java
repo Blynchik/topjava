@@ -19,11 +19,14 @@ public abstract class AbstractBaseEntity implements Persistable<Integer> {
 //  See https://hibernate.atlassian.net/browse/HHH-3718 and https://hibernate.atlassian.net/browse/HHH-12034
 //  Proxy initialization when accessing its identifier managed now by JPA_PROXY_COMPLIANCE setting
     protected Integer id;
+
     protected AbstractBaseEntity() {
     }
+
     protected AbstractBaseEntity(Integer id) {
         this.id = id;
     }
+
     public void setId(Integer id) {
         this.id = id;
     }
@@ -32,6 +35,7 @@ public abstract class AbstractBaseEntity implements Persistable<Integer> {
     public Integer getId() {
         return id;
     }
+
     public int id() {
         Assert.notNull(id, "Entity must have id");
         return id;
@@ -41,10 +45,12 @@ public abstract class AbstractBaseEntity implements Persistable<Integer> {
     public boolean isNew() {
         return this.id == null;
     }
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + ":" + id;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -56,6 +62,7 @@ public abstract class AbstractBaseEntity implements Persistable<Integer> {
         AbstractBaseEntity that = (AbstractBaseEntity) o;
         return id != null && id.equals(that.id);
     }
+
     @Override
     public int hashCode() {
         return id == null ? 0 : id;

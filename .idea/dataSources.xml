@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="topjava@localhost" uuid="e73c4fb5-a2db-4bd0-b0a0-589fb04071d5">
+    <data-source source="LOCAL" name="topJavaTest@localhost" uuid="fca90c32-d600-483a-93d7-9325d2c16a3d">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/topjava</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/topJavaTest</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

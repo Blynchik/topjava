@@ -1,34 +1,45 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>ru.javawebinar</groupId>
     <artifactId>topjava</artifactId>
     <packaging>war</packaging>
+
     <version>1.0-SNAPSHOT</version>
+
     <name>Calories Management</name>
     <url>http://topjava.herokuapp.com/</url>
+
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
         <spring.version>5.3.23</spring.version>
         <spring-data-jpa.version>2.7.5</spring-data-jpa.version>
         <tomcat.version>9.0.68</tomcat.version>
+
         <!-- Logging -->
         <logback.version>1.3.4</logback.version>
         <slf4j.version>2.0.3</slf4j.version>
+
         <!--DB-->
         <postgresql.version>42.5.0</postgresql.version>
+
         <!-- Hibernate -->
         <hibernate.version>5.6.12.Final</hibernate.version>
         <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
         <javax-el.version>3.0.1-b12</javax-el.version>
+
         <!--Cache-->
         <ehcache.version>3.10.2</ehcache.version>
+
         <!--    Tests  -->
         <junit.version>4.13.2</junit.version>
         <assertj.version>3.23.1</assertj.version>
     </properties>
+
     <build>
         <finalName>topjava</finalName>
         <defaultGoal>package</defaultGoal>
@@ -55,6 +66,7 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
+
             <!-- http://stackoverflow.com/questions/4305935/is-it-possible-to-supply-tomcat6s-context-xml-file-via-the-maven-cargo-plugin#4417945 -->
             <!-- https://codehaus-cargo.github.io/cargo/Tomcat+9.x.html -->
             <plugin>
@@ -98,6 +110,7 @@
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <!-- Logging with SLF4J & LogBack -->
         <dependency>
@@ -106,17 +119,20 @@
             <version>${slf4j.version}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
             <scope>runtime</scope>
         </dependency>
+
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>1.3.2</version>
         </dependency>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -127,6 +143,7 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>${spring-data-jpa.version}</version>
         </dependency>
+
         <!--- ORM -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -143,6 +160,7 @@
             <artifactId>hibernate-jcache</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
+
         <!--http://hibernate.org/validator/documentation/getting-started/#unified-expression-language-el-->
         <dependency>
             <groupId>org.glassfish</groupId>
@@ -150,6 +168,7 @@
             <version>${javax-el.version}</version>
             <scope>provided</scope>
         </dependency>
+
         <!-- Cache -->
         <dependency>
             <groupId>javax.cache</groupId>
@@ -168,12 +187,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <!--https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9-->
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
             <version>2.4.0-b180830.0438</version>
         </dependency>
+
         <!--Web-->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -181,6 +202,7 @@
             <version>${tomcat.version}</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -211,6 +233,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <profiles>
         <profile>
             <id>hsqldb</id>
@@ -222,6 +245,7 @@
                 </dependency>
             </dependencies>
         </profile>
+
         <profile>
             <id>postgres</id>
             <dependencies>
@@ -248,6 +272,7 @@
             </activation>
         </profile>
     </profiles>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
