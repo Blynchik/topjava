@@ -1,0 +1,10 @@
+2022-10-30 13:50:07,119 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
+2022-10-30 13:51:45,356 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
+2022-10-30 13:51:53,129 INFO  r.javawebinar.topjava.web.meal.MealRestController.delete:38 - delete meal 100009 for user 100000
+2022-10-30 13:51:53,157 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
+2022-10-30 13:51:57,874 INFO  r.javawebinar.topjava.web.meal.MealRestController.create:51 - create Meal{id=null, dateTime=2022-10-30T13:51, description='Bpvtyty', calories=1000} for user 100000
+2022-10-30 13:51:57,938 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
+2022-10-30 13:52:00,716 INFO  r.javawebinar.topjava.web.meal.MealRestController.delete:38 - delete meal 100012 for user 100000
+2022-10-30 13:52:00,742 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
+2022-10-30 13:58:44,039 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100001
+2022-10-30 14:21:48,301 INFO  r.javawebinar.topjava.web.meal.MealRestController.getAll:44 - getAll for user 100000
