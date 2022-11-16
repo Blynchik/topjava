@@ -23,10 +23,8 @@
         <hibernate.version>5.6.12.Final</hibernate.version>
         <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
         <javax-el.version>3.0.1-b12</javax-el.version>
-
         <!--Cache-->
         <ehcache.version>3.10.2</ehcache.version>
-
         <!--    Tests  -->
         <junit.version>4.13.2</junit.version>
         <assertj.version>3.23.1</assertj.version>
@@ -99,6 +97,12 @@
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate-validator.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jcache</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
         <!--http://hibernate.org/validator/documentation/getting-started/#unified-expression-language-el-->
         <dependency>
             <groupId>org.glassfish</groupId>
@@ -106,7 +110,6 @@
             <version>${javax-el.version}</version>
             <scope>provided</scope>
         </dependency>
-
         <!-- Cache -->
         <dependency>
             <groupId>javax.cache</groupId>
@@ -125,14 +128,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <!--https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9-->
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
             <version>2.4.0-b180830.0438</version>
         </dependency>
-
         <!--Web-->
         <dependency>
             <groupId>javax.servlet</groupId>
